@@ -64,53 +64,37 @@
 
 
 
-        //  console.log(promise);
+        // //  console.log(promise);
 
 
 
 
-        function step1(){
-            return  new Promise((resolve,reject)=>{
-                setTimeout(()=>{
-                    console.log('selectttt');
-                    resolve()
+        // function step1(){
+        //     return  new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             console.log('selectttt');
+        //             resolve()
 
-                },5000)
+        //         },5000)
 
-            })
+        //     })
 
-        }
+        // }
 
-        function step2(){
-           return new Promise((resolve,reject)=>{
-                setTimeout(()=>{
-                    console.log('filtereddddd');
-                    resolve()
+        // function step2(){
+        //    return new Promise((resolve,reject)=>{
+        //         setTimeout(()=>{
+        //             console.log('filtereddddd');
+        //             resolve()
 
-                },5000)
+        //         },5000)
 
-            })
+        //     })
 
-        }
-
-
-         async  function call(){
-
-             await step1()
-             await step2()
+        // }
 
 
-        }
-        call()
-        // console.log(call());
-
-
-
-
-
-
-
-
+ 
 
         // step1().
         // then(()=>{
@@ -119,8 +103,50 @@
         // }).
         // then(()=>{
 
-        // })
+        // // })
 
+
+
+
+
+
+
+        // NodeJS   ,    ExpressJs  ,    DB
+
+
+        // npm  
+
+
+        // console.log('hello');
+
+
+          let express=   require('express')
+              let app=   express()
+
+              app.get('/',(req,res)=>{
+                res.send('hello')
+                
+              })
+              app.get('/about',(req,res)=>{
+                res.send('abouttttttt  ')
+                
+              })
+
+              app.listen( 3000,   ()=>{
+                console.log('Server running on port no 3000');
+
+              })
+
+
+
+
+     
+
+
+
+        //    1    npm init
+        //      2  npm i express
+   
 
 
 
